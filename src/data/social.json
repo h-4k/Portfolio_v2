@@ -1,0 +1,14 @@
+{
+    "github": {
+        "platform": "GitHub",
+        "url": "https://github.com/h-4k",
+        "username": "@h-4k",
+        "icon": "github"
+    },
+    "email": {
+        "platform": "Email",
+        "url": "mailto:aymane.oug@example.com",
+        "username": "aymane.oug@example.com",
+        "icon": "email"
+    }
+}

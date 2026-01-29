@@ -1,26 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&family=Syne:wght@400;500;600;700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Rajdhani:wght@400;500;600;700&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=clash-display@200,400,700,600,500&display=swap');
 @import "tailwindcss";
 
+/* =================================================================
+   THE MULTIVERSE SYSTEM
+   ================================================================= */
+
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Base Physics */
+  --grain-opacity: 0.05;
+  --cursor-size: 20px;
+
+  /* Universal Colors */
+  --base-bg: #dde1d2;
+  --base-text: #0a0a0a;
+
+  /* CYBER (The Guardian) */
+  --cyber-primary: #00ff41;
+  --cyber-bg: #050505;
+  --cyber-text: #ffffff;
+
+  /* DESIGN (The Alchemist) */
+  --design-primary: #20C997;
+  --design-secondary: #FFE5B4;
+  --design-bg: #ffffff;
+  --design-text: #111111;
+
+  /* MUSIC (The Architect) */
+  --music-primary: #c9a961;
+  --music-bg: #121212;
+  --music-text: #ffffff;
+
+  /* AERO (The Engineer) */
+  --aero-primary: #4a9ece;
+  --aero-bg: #050505;
+  --aero-text: #ffffff;
+
+  /* Transitions */
+  --ease-fluid: cubic-bezier(0.34, 1.56, 0.64, 1);
+
+  /* Spacing */
+  --nav-height: 80px;
+  --section-padding: 120px;
+}
+
+/* Light Theme Overrides */
+[data-theme="light"] .cyber-theme {
+  --cyber-bg: #f0fff4;
+  --cyber-text: #050505;
+  --cyber-primary: #007a1c;
+  /* Darker green for readability on light bg */
+  --cyber-text-accent: #007a1c;
+}
+
+[data-theme="light"] .design-theme {
+  --design-bg: #ffffff;
+  --design-text: #000000;
+  --design-primary: #007a5e;
+  /* Darker teal/emerald */
+  --design-text-accent: #007a5e;
+}
+
+[data-theme="light"] .music-theme {
+  --music-bg: #faf8f3;
+  --music-text: #050505;
+  --music-primary: #8a6d3b;
+  /* Darker bronze/brown */
+  --music-text-accent: #8a6d3b;
+}
+
+[data-theme="light"] .aerospace-theme {
+  --aero-bg: #f0f9ff;
+  --aero-text: #050505;
+  --aero-primary: #005a9e;
+  /* Darker blue */
+  --aero-text-accent: #005a9e;
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  /* Fonts */
+  --font-clash: 'Clash Display', sans-serif;
+  --font-inter: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  --font-syne: 'Syne', sans-serif;
+  --font-playfair: 'Playfair Display', serif;
+  --font-rajdhani: 'Rajdhani', sans-serif;
+
+  /* Colors */
+  --color-cyber: var(--cyber-primary);
+  --color-design: var(--design-primary);
+  --color-music: var(--music-primary);
+  --color-aero: var(--aero-primary);
+
+  --color-base-bg: var(--base-bg);
+  --color-base-text: var(--base-text);
+
+  /* Theme-aware Text Colors */
+  --color-cyber-text: var(--cyber-text);
+  --color-design-text: var(--design-text);
+  --color-music-text: var(--music-text);
+  --color-aero-text: var(--aero-text);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+/* =================================================================
+   GLOBAL ATMOSPHERE
+   ================================================================= */
+
+body {
+  background-color: var(--base-bg);
+  color: var(--base-text);
+  font-family: var(--font-inter);
+  cursor: none;
+  /* Custom cursor system takes over */
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Film Grain Overlay */
+.film-grain {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  z-index: 9998;
+  opacity: var(--grain-opacity);
+  background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.65' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
+}
+
+/* Utility to hide cursor on interactive elements to let custom cursor shine */
+a,
+button,
+input,
+[role="button"] {
+  cursor: none;
+}
+
+/* =================================================================
+   UTILITY CLASSES
+   ================================================================= */
+
+/* Theme Visibility Utilities */
+[data-theme="light"] .show-only-dark {
+  display: none !important;
+}
+
+/* [data-theme="dark"] .show-only-light {
+  display: none !important;
+} */
+
+.section-padding {
+  padding: var(--section-padding) 2rem;
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Text Selection */
+::selection {
+  background: var(--base-text);
+  color: var(--base-bg);
+}
+
+.cyber-theme ::selection {
+  background: var(--cyber-primary);
+  color: var(--cyber-bg);
+}
+
+.design-theme ::selection {
+  background: var(--design-primary);
+  color: #fff;
+}
+
+.music-theme ::selection {
+  background: var(--music-primary);
+  color: #000;
+}
+
+.aerospace-theme ::selection {
+  background: var(--aero-primary);
+  color: #000;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+.page-transition {
+  animation: fadeIn 0.6s ease-out;
 }

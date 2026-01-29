@@ -1,0 +1,55 @@
+{
+    "cyber": [
+        {
+            "id": "CITC",
+            "title": "introduction to cybersecurity",
+            "issuer": "cisco",
+            "date": "2025",
+            "image": "/images/certificates/cyber/introduction-to-cybersecurity.png",
+            "verificationLink": "/images/certificates/cyber/I2CSUpdate20251209-31-wi0e9h.pdf",
+            "personality": "cyber"
+        },
+        {
+            "id": "Nexhunt",
+            "title": "Participated in Nexhunt CTF",
+            "issuer": "Nexhunt",
+            "date": "2025",
+            "image": "/images/certificates/cyber/NexHUNT_CTF_h4k.pdf ",
+            "verificationLink": "/images/certificates/cyber/NexHUNT_CTF_h4k.pdf",
+            "personality": "cyber"
+        }
+    ],
+    "design": [
+        {
+            "id": "Comming Soon",
+            "title": "Comming Soon",
+            "issuer": "",
+            "date": "",
+            "image": "",
+            "verificationLink": "",
+            "personality": "design"
+        }
+    ],
+    "music": [
+       {
+            "id": "Comming Soon",
+            "title": "Comming Soon",
+            "issuer": "",
+            "date": "",
+            "image": "",
+            "verificationLink": "",
+            "personality": "music"
+        }
+    ],
+    "aerospace": [
+        {
+            "id": "Comming Soon",
+            "title": "Comming Soon",
+            "issuer": "",
+            "date": "",
+            "image": "",
+            "verificationLink": "",
+            "personality": "aerospace"
+        }
+    ]
+}

@@ -1,0 +1,178 @@
+// {
+//     "cyber": [
+//         {
+//             "id": "htb-top-hacker",
+//             "company": "HackTheBox",
+//             "role": "Top 1% Global Hacker",
+//             "period": "2024 - Present",
+//             "description": "Active member of the HackTheBox community, consistently ranking in the top 1% of hackers globally.",
+//             "achievements": [
+//                 "Solved 150+ machines across all difficulty levels",
+//                 "Achieved Pro Hacker rank with 95% completion rate",
+//                 "Contributed writeups helping 1000+ community members",
+//                 "Specialized in web exploitation and privilege escalation"
+//             ],
+//             "personality": "cyber"
+//         },
+//         {
+//             "id": "bug-bounty-hunter",
+//             "company": "Various Bug Bounty Programs",
+//             "role": "Security Researcher",
+//             "period": "2023 - Present",
+//             "description": "Active bug bounty hunter discovering and reporting critical vulnerabilities in web applications.",
+//             "achievements": [
+//                 "Discovered 25+ valid security vulnerabilities",
+//                 "Earned recognition from major tech companies",
+//                 "Specialized in authentication bypass and XSS vulnerabilities",
+//                 "Maintained 100% valid submission rate"
+//             ],
+//             "personality": "cyber"
+//         },
+//         {
+//             "id": "ctf-team-lead",
+//             "company": "National CTF Competitions",
+//             "role": "CTF Team Captain",
+//             "period": "2023 - Present",
+//             "description": "Lead competitive CTF team in national and international cybersecurity competitions.",
+//             "achievements": [
+//                 "Top 5 finishes in 10+ major CTF competitions",
+//                 "Led team to victory in regional cybersecurity championship",
+//                 "Specialized in web exploitation and cryptography challenges",
+//                 "Mentored 15+ aspiring security researchers"
+//             ],
+//             "personality": "cyber"
+//         }
+//     ],
+//     "design": [
+//         {
+//             "id": "freelance-designer",
+//             "company": "Freelance Creative Studio",
+//             "role": "Lead Graphic Designer",
+//             "period": "2023 - Present",
+//             "description": "Providing creative design solutions for startups, small businesses, and individual clients.",
+//             "achievements": [
+//                 "Completed 40+ successful client projects",
+//                 "Designed brand identities for 15+ startups",
+//                 "Maintained 5-star rating across all platforms",
+//                 "Generated $25K+ in revenue through design work"
+//             ],
+//             "personality": "design"
+//         },
+//         {
+//             "id": "design-community",
+//             "company": "Dribbble & Behance",
+//             "role": "Featured Designer",
+//             "period": "2022 - Present",
+//             "description": "Active member of the design community, sharing creative work and gaining recognition.",
+//             "achievements": [
+//                 "10K+ followers across design platforms",
+//                 "Featured in 'Best of Dribbble' 3 times",
+//                 "500K+ total views on design portfolio",
+//                 "Collaborated with international designers on projects"
+//             ],
+//             "personality": "design"
+//         },
+//         {
+//             "id": "school-design-lead",
+//             "company": "High School Design Club",
+//             "role": "President & Creative Director",
+//             "period": "2022 - 2024",
+//             "description": "Founded and led the school's first design club, organizing workshops and competitions.",
+//             "achievements": [
+//                 "Grew club from 5 to 50+ active members",
+//                 "Organized 3 design competitions with 200+ participants",
+//                 "Created all school event posters and promotional materials",
+//                 "Invited guest designers for monthly workshops"
+//             ],
+//             "personality": "design"
+//         }
+//     ],
+//     "music": [
+//         {
+//             "id": "live-performer",
+//             "company": "Local Venues & Events",
+//             "role": "Session Guitarist & Performer",
+//             "period": "2023 - Present",
+//             "description": "Regular performer at local venues, cultural events, and private functions.",
+//             "achievements": [
+//                 "Performed 30+ live shows to audiences of 100-500 people",
+//                 "Session guitarist for 5 local recording artists",
+//                 "Headlined at city's annual music festival",
+//                 "Developed signature fusion style blending rock and jazz"
+//             ],
+//             "personality": "music"
+//         },
+//         {
+//             "id": "music-producer",
+//             "company": "Independent Artist",
+//             "role": "Producer & Composer",
+//             "period": "2022 - Present",
+//             "description": "Creating original music productions spanning multiple genres and styles.",
+//             "achievements": [
+//                 "Released 15+ original tracks on streaming platforms",
+//                 "Accumulated 50K+ streams across all platforms",
+//                 "Produced music for 3 independent short films",
+//                 "Mastered Ableton Live, Logic Pro, and guitar recording techniques"
+//             ],
+//             "personality": "music"
+//         },
+//         {
+//             "id": "music-educator",
+//             "company": "Private Lessons",
+//             "role": "Guitar Instructor",
+//             "period": "2023 - Present",
+//             "description": "Teaching guitar to students of all ages and skill levels.",
+//             "achievements": [
+//                 "Taught 20+ students, ages 10-45",
+//                 "Developed custom curriculum for beginner to advanced levels",
+//                 "100% student satisfaction and retention rate",
+//                 "Students won 3 local talent competitions"
+//             ],
+//             "personality": "music"
+//         }
+//     ],
+//     "aerospace": [
+//         {
+//             "id": "research-project",
+//             "company": "High School Research Program",
+//             "role": "Lead Researcher",
+//             "period": "2024 - Present",
+//             "description": "Independent research project on rocket propulsion efficiency and trajectory optimization.",
+//             "achievements": [
+//                 "Developed working rocket propulsion simulator",
+//                 "Published research paper on trajectory optimization algorithms",
+//                 "Presented findings at regional science fair (1st place)",
+//                 "Collaboration offer from university aerospace department"
+//             ],
+//             "personality": "aerospace"
+//         },
+//         {
+//             "id": "nasa-space-apps",
+//             "company": "NASA Space Apps Challenge",
+//             "role": "Team Lead & Engineer",
+//             "period": "2023 - 2024",
+//             "description": "Led team in international hackathon focused on space-related challenges.",
+//             "achievements": [
+//                 "Top 10 global finish out of 10,000+ teams",
+//                 "Designed CubeSat mission architecture for earth observation",
+//                 "Created 3D models and thermal analysis simulations",
+//                 "Received recognition from NASA jury panel"
+//             ],
+//             "personality": "aerospace"
+//         },
+//         {
+//             "id": "aerospace-club",
+//             "company": "Model Rocketry Club",
+//             "role": "Co-Founder & Chief Engineer",
+//             "period": "2023 - Present",
+//             "description": "Founded school's first model rocketry club, building and launching rockets.",
+//             "achievements": [
+//                 "Successfully launched 12 model rockets to 1000+ feet altitude",
+//                 "Designed custom rocket with dual-stage separation system",
+//                 "Won regional model rocket competition",
+//                 "Established partnership with local aerospace company for mentorship"
+//             ],
+//             "personality": "aerospace"
+//         }
+//     ]
+// }

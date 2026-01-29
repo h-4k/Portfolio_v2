@@ -1,0 +1,255 @@
+{
+    "cyber": [
+        {
+            "id": "ctf-writeups-platform",
+            "title": "CTF Writeups Platform",
+            "description": "Comprehensive platform for sharing and discovering CTF challenge solutions",
+            "longDescription": "Built a full-stack web application for the cybersecurity community to share CTF writeups, exploit techniques, and vulnerability research. Features include markdown rendering, code syntax highlighting, and collaborative editing.",
+            "image": "/images/projects/cyber/ctf-platform.jpg",
+            "tags": [
+                "Next.js",
+                "PostgreSQL",
+                "Security",
+                "CTF"
+            ],
+            "github": "https://github.com/aymane/ctf-writeups",
+            "demo": "https://ctf-writeups.dev",
+            "personality": "cyber",
+            "featured": true,
+            "date": "2025"
+        },
+        {
+            "id": "recon-automation-suite",
+            "title": "Recon Automation Suite",
+            "description": "Advanced reconnaissance toolkit for bug bounty hunting",
+            "longDescription": "Developed a comprehensive automation framework combining subdomain enumeration, port scanning, vulnerability detection, and OSINT gathering. Integrates with multiple APIs and databases for comprehensive reconnaissance.",
+            "image": "/images/projects/cyber/recon-suite.jpg",
+            "tags": [
+                "Python",
+                "Bash",
+                "OSINT",
+                "Bug Bounty"
+            ],
+            "github": "https://github.com/aymane/recon-suite",
+            "personality": "cyber",
+            "featured": true,
+            "date": "2025"
+        },
+        {
+            "id": "vulnerability-scanner",
+            "title": "Web Vulnerability Scanner",
+            "description": "Custom vulnerability scanner for detecting OWASP Top 10 issues",
+            "image": "/images/projects/cyber/vuln-scanner.jpg",
+            "tags": [
+                "Python",
+                "Security",
+                "OWASP",
+                "Automation"
+            ],
+            "github": "https://github.com/aymane/vuln-scanner",
+            "personality": "cyber",
+            "date": "2024"
+        },
+        {
+            "id": "crypto-challenges",
+            "title": "Cryptography Challenge Repository",
+            "description": "Collection of cryptographic challenges and their elegant solutions",
+            "image": "/images/projects/cyber/crypto-challenges.jpg",
+            "tags": [
+                "Cryptography",
+                "Python",
+                "Mathematics",
+                "CTF"
+            ],
+            "github": "https://github.com/aymane/crypto-challenges",
+            "personality": "cyber",
+            "date": "2024"
+        }
+    ],
+    "design": [
+        {
+            "id": "brand-identity-startup",
+            "title": "Tech Startup Brand Identity",
+            "description": "Complete brand identity system for an AI-powered analytics startup",
+            "longDescription": "Developed comprehensive brand guidelines including logo design, color palette, typography system, and visual language. Created marketing materials, pitch deck designs, and social media templates maintaining consistent brand aesthetics.",
+            "image": "/images/projects/design/startup-brand.jpg",
+            "tags": [
+                "Branding",
+                "Logo Design",
+                "Adobe Illustrator",
+                "Figma"
+            ],
+            "personality": "design",
+            "featured": true,
+            "date": "2025"
+        },
+        {
+            "id": "mobile-app-ui",
+            "title": "Fitness App UI/UX Design",
+            "description": "Modern, minimalist design for a health and fitness mobile application",
+            "longDescription": "Designed complete user interface and experience for a fitness tracking app. Conducted user research, created wireframes, high-fidelity mockups, and interactive prototypes. Focused on accessibility and intuitive navigation.",
+            "image": "/images/projects/design/fitness-app.jpg",
+            "tags": [
+                "UI/UX",
+                "Mobile Design",
+                "Figma",
+                "Prototyping"
+            ],
+            "personality": "design",
+            "featured": true,
+            "date": "2025"
+        },
+        {
+            "id": "poster-series",
+            "title": "Experimental Poster Series",
+            "description": "Collection of abstract posters exploring color, form, and typography",
+            "image": "/images/projects/design/poster-series.jpg",
+            "tags": [
+                "Poster Design",
+                "Typography",
+                "Adobe Photoshop"
+            ],
+            "personality": "design",
+            "date": "2024"
+        },
+        {
+            "id": "web-redesign",
+            "title": "E-Commerce Website Redesign",
+            "description": "Complete visual overhaul of an online fashion retailer",
+            "image": "/images/projects/design/ecommerce-redesign.jpg",
+            "tags": [
+                "Web Design",
+                "E-Commerce",
+                "Figma",
+                "User Research"
+            ],
+            "personality": "design",
+            "date": "2024"
+        }
+    ],
+    "music": [
+        {
+            "id": "debut-ep",
+            "title": "Debut EP: Digital Horizons",
+            "description": "5-track electronic rock fusion exploring themes of technology and humanity",
+            "longDescription": "Composed, produced, and performed a 5-track EP blending progressive rock guitar work with electronic production. Features intricate time signatures, layered synthesizers, and experimental sound design. All instruments performed and recorded independently.",
+            "image": "/images/projects/music/debut-ep.jpg",
+            "tags": [
+                "Guitar",
+                "Production",
+                "Composition",
+                "Electronic"
+            ],
+            "demo": "https://soundcloud.com/aymane/digital-horizons",
+            "personality": "music",
+            "featured": true,
+            "date": "2025"
+        },
+        {
+            "id": "jazz-trio-sessions",
+            "title": "Jazz Trio Live Sessions",
+            "description": "Collection of improvised jazz performances recorded live",
+            "image": "/images/projects/music/jazz-sessions.jpg",
+            "tags": [
+                "Jazz",
+                "Guitar",
+                "Improvisation",
+                "Live Performance"
+            ],
+            "demo": "https://youtube.com/@aymane/jazz-sessions",
+            "personality": "music",
+            "featured": true,
+            "date": "2024"
+        },
+        {
+            "id": "soundtrack-short-film",
+            "title": "Short Film Soundtrack",
+            "description": "Original score for an independent sci-fi short film",
+            "image": "/images/projects/music/film-score.jpg",
+            "tags": [
+                "Film Score",
+                "Composition",
+                "Orchestration"
+            ],
+            "personality": "music",
+            "date": "2024"
+        },
+        {
+            "id": "guitar-covers",
+            "title": "Technical Guitar Covers",
+            "description": "YouTube series of complex guitar arrangements and covers",
+            "image": "/images/projects/music/guitar-covers.jpg",
+            "tags": [
+                "Guitar",
+                "YouTube",
+                "Performance"
+            ],
+            "demo": "https://youtube.com/@aymane/covers",
+            "personality": "music",
+            "date": "2024"
+        }
+    ],
+    "aerospace": [
+        {
+            "id": "rocket-propulsion-sim",
+            "title": "Rocket Propulsion Simulator",
+            "description": "Physics-based simulation of rocket engine performance and trajectory",
+            "longDescription": "Developed a comprehensive simulation software modeling liquid and solid rocket propulsion systems. Includes thrust calculations, specific impulse optimization, trajectory prediction, and 3D visualization of flight paths. Built using Python with NumPy and Matplotlib.",
+            "image": "/images/projects/aerospace/propulsion-sim.jpg",
+            "tags": [
+                "Python",
+                "Physics",
+                "Simulation",
+                "Aerospace"
+            ],
+            "github": "https://github.com/aymane/rocket-sim",
+            "personality": "aerospace",
+            "featured": true,
+            "date": "2025"
+        },
+        {
+            "id": "cubesat-design",
+            "title": "CubeSat Mission Design",
+            "description": "Complete mission profile for a 3U CubeSat earth observation platform",
+            "longDescription": "Designed comprehensive mission architecture for a CubeSat including payload selection, power budget analysis, communication systems, and orbital mechanics calculations. Created CAD models and thermal analysis simulations.",
+            "image": "/images/projects/aerospace/cubesat.jpg",
+            "tags": [
+                "Satellite Design",
+                "CAD",
+                "Orbital Mechanics",
+                "Engineering"
+            ],
+            "personality": "aerospace",
+            "featured": true,
+            "date": "2025"
+        },
+        {
+            "id": "cfd-analysis",
+            "title": "Aerodynamic CFD Analysis",
+            "description": "Computational fluid dynamics study of rocket nose cone designs",
+            "image": "/images/projects/aerospace/cfd-analysis.jpg",
+            "tags": [
+                "CFD",
+                "ANSYS",
+                "Aerodynamics",
+                "Analysis"
+            ],
+            "personality": "aerospace",
+            "date": "2024"
+        },
+        {
+            "id": "mars-habitat",
+            "title": "Mars Habitat Concept Design",
+            "description": "Conceptual design for sustainable human habitation on Mars",
+            "image": "/images/projects/aerospace/mars-habitat.jpg",
+            "tags": [
+                "Space Architecture",
+                "CAD",
+                "Research",
+                "Innovation"
+            ],
+            "personality": "aerospace",
+            "date": "2024"
+        }
+    ]
+}
