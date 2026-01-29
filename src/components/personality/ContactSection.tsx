@@ -19,19 +19,15 @@ export default function ContactSection({ personality }: ContactSectionProps) {
         setStatus('submitting');
 
         try {
-            const res = await fetch('/api/contact', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ ...formState, personality }),
-            });
+            // Simulated submission since static export doesn't support API routes
+            console.log('Contact form submission:', { ...formState, personality });
 
-            if (res.ok) {
-                setStatus('success');
-                setFormState({ name: '', email: '', message: '' });
-                setTimeout(() => setStatus('idle'), 5000);
-            } else {
-                setStatus('error');
-            }
+            // Artificial delay to simulate network request
+            await new Promise(resolve => setTimeout(resolve, 1000));
+
+            setStatus('success');
+            setFormState({ name: '', email: '', message: '' });
+            setTimeout(() => setStatus('idle'), 5000);
         } catch (error) {
             console.error(error);
             setStatus('error');

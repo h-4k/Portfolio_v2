@@ -6,31 +6,18 @@ import { PersonalityType, Certificate } from '@/types';
 import { getPersonalityConfig } from '@/utils/personality';
 import Image from 'next/image';
 
+import certificatesData from '@/data/certificates.json';
+
 interface CertificatesSectionProps {
     personality: PersonalityType;
 }
 
 export default function CertificatesSection({ personality }: CertificatesSectionProps) {
     const config = getPersonalityConfig(personality);
-    const [certificates, setCertificates] = useState<Certificate[]>([]);
     const [selectedCert, setSelectedCert] = useState<Certificate | null>(null);
-    const [isLoading, setIsLoading] = useState(true);
 
-    useEffect(() => {
-        const fetchCertificates = async () => {
-            try {
-                const response = await fetch('/data/certificates.json');
-                const data = await response.json();
-                setCertificates(data[personality] || []);
-            } catch (error) {
-                console.error('Error loading certificates:', error);
-            } finally {
-                setIsLoading(false);
-            }
-        };
-
-        fetchCertificates();
-    }, [personality]);
+    const certificates = (certificatesData as Record<string, Certificate[]>)[personality] || [];
+    const isLoading = false;
 
     if (isLoading) {
         return (

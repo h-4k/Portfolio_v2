@@ -6,33 +6,18 @@ import { PersonalityType, Project } from '@/types';
 import { getPersonalityConfig } from '@/utils/personality';
 import Image from 'next/image';
 
+import projectsData from '@/data/projects.json';
+
 interface ProjectsSectionProps {
     personality: PersonalityType;
 }
 
 export default function ProjectsSection({ personality }: ProjectsSectionProps) {
     const config = getPersonalityConfig(personality);
-    const [projects, setProjects] = useState<Project[]>([]);
-    const [loading, setLoading] = useState(true);
     const [selectedId, setSelectedId] = useState<string | null>(null);
 
-    useEffect(() => {
-        const fetchProjects = async () => {
-            try {
-                const res = await fetch(`/api/projects?personality=${personality}`);
-                const data = await res.json();
-                if (Array.isArray(data)) {
-                    setProjects(data);
-                }
-            } catch (error) {
-                console.error('Failed to fetch projects', error);
-            } finally {
-                setLoading(false);
-            }
-        };
-
-        fetchProjects();
-    }, [personality]);
+    const projects = (projectsData as Record<string, Project[]>)[personality] || [];
+    const loading = false;
 
     return (
         <section id="projects" className="section-padding py-32 relative z-20 min-h-screen">
@@ -47,7 +32,7 @@ export default function ProjectsSection({ personality }: ProjectsSectionProps) {
                             style={{ background: config.accentColor }}
                             initial={{ width: 0 }}
                             whileInView={{ width: '100%' }}
-                            duration={1}
+                            transition={{ duration: 1 }}
                         />
                     </div>
                 </div>

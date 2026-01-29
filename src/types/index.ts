@@ -70,8 +70,9 @@ export interface ContactFormData {
 }
 
 export interface AnimationVariants {
-  initial: object;
-  animate: object;
-  exit?: object;
-  transition?: object;
+  initial: any;
+  animate: any;
+  exit?: any;
+  transition?: any;
+  [key: string]: any;
 }
