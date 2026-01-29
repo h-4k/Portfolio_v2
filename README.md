@@ -1,19 +1,19 @@
-<div align="center">
-
 # 🌌 MULTIVERSE PORTFOLIO V2
 ### ONE VISIONARY | FOUR IDENTITIES
 
-[DEMO](https://aymane-portfolio.vercel.app) • [DOCUMENTATION](#-project-structure) • [CONTACT](#-get-in-touch)
+<p align="center">
+  <a href="https://aymane-portfolio.vercel.app">DEMO</a> • 
+  <a href="#-project-structure">DOCUMENTATION</a> • 
+  <a href="#-get-in-touch">CONTACT</a>
+</p>
 
-<br />
-
-[![Next.js](https://img.shields.io/badge/Next.js-15-000000?style=for-the-badge&logo=next.js&logoColor=white)](https://nextjs.org/)
-[![TypeScript](https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
-[![Three.js](https://img.shields.io/badge/Three.js-0.182-black?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
-[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-ff0055?style=for-the-badge&logo=framer&logoColor=white)](https://framer.com/motion)
-
-</div>
+<p align="center">
+  <a href="https://nextjs.org/"><img src="https://img.shields.io/badge/Next.js-15-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js"></a>
+  <a href="https://www.typescriptlang.org/"><img src="https://img.shields.io/badge/TypeScript-5-3178C6?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript"></a>
+  <a href="https://tailwindcss.com/"><img src="https://img.shields.io/badge/Tailwind_CSS-4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white" alt="Tailwind CSS"></a>
+  <a href="https://threejs.org/"><img src="https://img.shields.io/badge/Three.js-0.182-black?style=for-the-badge&logo=three.js&logoColor=white" alt="Three.js"></a>
+  <a href="https://framer.com/motion"><img src="https://img.shields.io/badge/Framer_Motion-12-ff0055?style=for-the-badge&logo=framer&logoColor=white" alt="Framer Motion"></a>
+</p>
 
 ---
 
