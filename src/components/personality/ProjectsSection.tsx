@@ -14,10 +14,21 @@ interface ProjectsSectionProps {
 
 export default function ProjectsSection({ personality }: ProjectsSectionProps) {
     const config = getPersonalityConfig(personality);
+    const [projects, setProjects] = useState<Project[]>([]);
+    const [loading, setLoading] = useState(true);
     const [selectedId, setSelectedId] = useState<string | null>(null);
 
-    const projects = (projectsData as Record<string, Project[]>)[personality] || [];
-    const loading = false;
+    useEffect(() => {
+        // Filter projects by personality from static data
+        try {
+            const personalityProjects = (projectsData as any)[personality] || [];
+            setProjects(personalityProjects);
+        } catch (error) {
+            console.error('Failed to load projects', error);
+        } finally {
+            setLoading(false);
+        }
+    }, [personality]);
 
     return (
         <section id="projects" className="section-padding py-32 relative z-20 min-h-screen">

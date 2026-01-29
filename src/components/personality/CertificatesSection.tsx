@@ -14,10 +14,21 @@ interface CertificatesSectionProps {
 
 export default function CertificatesSection({ personality }: CertificatesSectionProps) {
     const config = getPersonalityConfig(personality);
+    const [certificates, setCertificates] = useState<Certificate[]>([]);
     const [selectedCert, setSelectedCert] = useState<Certificate | null>(null);
+    const [isLoading, setIsLoading] = useState(true);
 
-    const certificates = (certificatesData as Record<string, Certificate[]>)[personality] || [];
-    const isLoading = false;
+    useEffect(() => {
+        // Filter certificates by personality from static data
+        try {
+            const personalityCerts = (certificatesData as any)[personality] || [];
+            setCertificates(personalityCerts);
+        } catch (error) {
+            console.error('Error loading certificates:', error);
+        } finally {
+            setIsLoading(false);
+        }
+    }, [personality]);
 
     if (isLoading) {
         return (

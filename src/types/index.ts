@@ -70,9 +70,9 @@ export interface ContactFormData {
 }
 
 export interface AnimationVariants {
-  initial: any;
-  animate: any;
-  exit?: any;
-  transition?: any;
-  [key: string]: any;
+  initial: object;
+  animate: object;
+  exit?: object;
+  transition?: object;
+  [key: string]: any; // Allow for other framer-motion properties
 }
